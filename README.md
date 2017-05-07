@@ -9,7 +9,7 @@ this line to your .vimrc:
 Screenshot
 ---
 
-![greenwint]()
+![greenwint](https://github.com/preocanin/greenwint/blob/master/images/greenwint.png)
 
 
    ['winterd']: <https://github.com/smurfd/winterd>
