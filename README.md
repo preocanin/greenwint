@@ -1,15 +1,12 @@
 # greenwint
 
 A color scheme for Vim based on ['winterd'] by smurfd.
-Works with GUI, but if you want to use it in terminal make sure you added 
-this line to your .vimrc:
-
-        set termguicolors
+Works with GUI and terminal (it exists samll difference in color shades). 
 
 Screenshot
 ---
 
-![greenwint](https://github.com/preocanin/greenwint/blob/master/images/greenwint.png)
+![greenwint](https://github.com/preocanin/greenwint/blob/master/images/greenwint.gif)
 
 
    ['winterd']: <https://github.com/smurfd/winterd>
