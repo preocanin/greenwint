@@ -1,7 +1,7 @@
 # greenwint
 
 A color scheme for Vim based on ['winterd'] by smurfd.
-Works with GUI and terminal (it exists samll difference in color shades). 
+Works with GUI and terminal (it exists small difference in color shades). 
 
 Screenshot
 ---
