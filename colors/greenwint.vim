@@ -1,6 +1,6 @@
 "
 " Name: greenwint
-" Version: 0.2
+" Version: 0.3
 " Maintainer: https://www.github.com/preocanin
 " Licence: The MIT Licence (MIT)
 " 
@@ -35,12 +35,12 @@ hi SignColumn  guibg=#262626 guifg=#F3F3F3 ctermbg=235 ctermfg=255
 hi StatusLine guibg=#207050 guifg=#D8D8D8 ctermbg=29 ctermfg=188 gui=italic cterm=italic
 hi TabLineSel guibg=#207050 guifg=#D8D8D8 ctermbg=29 ctermfg=188 
 
-hi VertSplit guibg=#D8D8D8 guifg=#207050 ctermbg=188 ctermfg=23
+hi VertSplit    guibg=#D8D8D8 guifg=#207050 ctermbg=188 ctermfg=23
 hi StatusLineNC guibg=#191919 guifg=#6F6F6F ctermbg=234 ctermfg=59
 
-hi WildMenu guibg=#BBFFDD guifg=#0C0C0C ctermbg=158 ctermfg=16
+hi WildMenu    guibg=#BBFFDD guifg=#0C0C0C ctermbg=158 ctermfg=16
 
-hi TabLine guibg=#191919 guifg=#6F6F6F ctermbg=234 ctermfg=59 gui=none cterm=none
+hi TabLine     guibg=#191919 guifg=#6F6F6F ctermbg=234 ctermfg=59 gui=none cterm=none
 hi TabLineFill guifg=#191919 ctermfg=234
 
 hi DiffDelete guibg=#FFCCBB guifg=#3F3F3F ctermbg=223 ctermfg=59
@@ -57,15 +57,14 @@ hi link Error ErrorMsg
 hi Title guifg=#BBFFBB ctermfg=157
 hi link Folded Title
 
-hi ModeMsg guifg=#BBFFDD ctermfg=158 gui=none cterm=none
-
+hi ModeMsg   guifg=#BBFFDD ctermfg=158 gui=none cterm=none
 hi Directory guifg=#6BEE6B ctermfg=83 gui=none cterm=none
 
 if version >= 700
     hi Pmenu        guibg=#BBFFDD guifg=#3F3F3F ctermbg=158 ctermfg=59
     hi PmenuSel     guibg=#35EF9F guifg=#0C0C0C ctermbg=85 ctermfg=232
-    hi PmenuSbar    guibg=#141414 ctermbg=233
-    hi PmenuThumb   guibg=#2D2D2D ctermbg=236
+    hi PmenuSbar    guibg=#141414               ctermbg=233
+    hi PmenuThumb   guibg=#2D2D2D               ctermbg=236
     hi Search       guibg=#BBFFDD guifg=#000000 ctermbg=158 ctermfg=16 gui=bold cterm=bold
     hi IncSearch    guibg=#000000 guifg=#BBFFDD ctermbg=16 ctermfg=158 gui=bold cterm=bold
     hi CursorLine   guibg=#303030               ctermbg=236 gui=none cterm=none
@@ -73,20 +72,20 @@ if version >= 700
     hi CursorColumn guibg=#2B2B2B ctermbg=236
 endif
 
-hi Operator      guifg=#F3F3F3 ctermfg=255 gui=none cterm=none
-hi Identifier    guifg=#F3F3F3 ctermfg=255 gui=bold cterm=bold
-hi Comment       guifg=#7F7F7F ctermfg=244 gui=italic cterm=italic 
+hi Operator      guifg=#F3F3F3               ctermfg=255 gui=none cterm=none
+hi Identifier    guifg=#F3F3F3               ctermfg=255 gui=bold cterm=bold
+hi Comment       guifg=#7F7F7F               ctermfg=244 gui=italic cterm=italic 
 hi Todo          guifg=#207050 guibg=#F3F3F3 ctermfg=23 ctermbg=255 gui=bold cterm=bold
-hi Statement     guifg=#0C0C0C ctermfg=232 gui=none
-hi Type          guifg=#50E89C ctermfg=79 gui=none cterm=none
-hi Constant      guifg=#50E89C ctermfg=79 gui=italic cterm=italic
-hi Conditional   guifg=#0C0C0C ctermfg=232 gui=bold cterm=bold
-hi Number        guifg=#6BEE6B ctermfg=83 gui=none cterm=none
-hi String        guifg=#6BEE6B ctermfg=83 gui=italic cterm=italic 
-hi Delimiter     guifg=#BBFFDD ctermfg=158 gui=bold cterm=bold
-hi PreProc       guifg=#BBFFDD ctermfg=158 gui=italic cterm=italic
-hi Special       guifg=#0C0C0C ctermfg=232 gui=none cterm=none
-hi Keyword       guifg=#F3F3F3 ctermfg=255 gui=bold cterm=bold
+hi Statement     guifg=#0C0C0C               ctermfg=232 gui=none
+hi Type          guifg=#50E89C               ctermfg=79 gui=none cterm=none
+hi Constant      guifg=#50E89C               ctermfg=79 gui=italic cterm=italic
+hi Conditional   guifg=#0C0C0C               ctermfg=232 gui=bold cterm=bold
+hi Number        guifg=#6BEE6B               ctermfg=83 gui=none cterm=none
+hi String        guifg=#6BEE6B               ctermfg=83 gui=italic cterm=italic 
+hi Delimiter     guifg=#BBFFDD               ctermfg=158 gui=bold cterm=bold
+hi PreProc       guifg=#BBFFDD               ctermfg=158 gui=italic cterm=italic
+hi Special       guifg=#0C0C0C               ctermfg=232 gui=none cterm=none
+hi Keyword       guifg=#F3F3F3               ctermfg=255 gui=bold cterm=bold
 
 hi link Function        Normal
 hi link Character       Constant
@@ -107,5 +106,13 @@ hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
 
-" --- TODO Haskell --- 
+" --- Haskell --- 
+hi link hsVarSym Type 
+hi hsImport      guifg=#BBFFDD ctermfg=158 
+hi link hsImportMod hsImport
+hi ConId         guifg=#F3F3F3 ctermfg=255 gui=bold cterm=bold
+hi link hsVarSym Type 
+hi hsDelimiter   guifg=#BBFFDD ctermfg=158
+hi hsConSym      guifg=#0C0C0C ctermfg=232 gui=bold cterm=bold
+hi haskellLambda guifg=#50E89C ctermfg=79  gui=bold cterm=bold
 
