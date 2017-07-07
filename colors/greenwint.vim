@@ -1,6 +1,6 @@
 "
 " Name: greenwint
-" Version: 0.3
+" Version: 0.3.1
 " Maintainer: https://www.github.com/preocanin
 " Licence: The MIT Licence (MIT)
 " 
@@ -116,3 +116,9 @@ hi hsDelimiter   guifg=#BBFFDD ctermfg=158
 hi hsConSym      guifg=#0C0C0C ctermfg=232 gui=bold cterm=bold
 hi haskellLambda guifg=#50E89C ctermfg=79  gui=bold cterm=bold
 
+" --- Python ---
+hi pythonInclude guifg=#BBFFDD ctermfg=158
+
+" --- Verilog ---
+hi link verilogOperator Type
+hi link verilogConstant PreProc
