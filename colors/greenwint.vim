@@ -124,7 +124,6 @@ hi link verilogOperator Type
 hi link verilogConstant PreProc
 
 " -- Javascript ---
-hi link javaScriptArrowFunc   Statement
 hi link javaScriptBraces      javaScriptParens
 hi link javaScriptIdentifier  Type
 hi link javaScriptMember      javaScriptOperator
@@ -132,4 +131,3 @@ hi link javaScriptNumber      Number
 hi link javaScriptOperator    Identifier 
 hi link javaScriptParens      hsDelimiter 
 hi link javaScriptFunction    Statement
-hi link jsFunction            javaScriptFunction
